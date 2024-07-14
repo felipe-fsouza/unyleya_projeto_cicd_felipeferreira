@@ -1,0 +1,21 @@
+trigger:
+main
+
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  dockerHubId: 'seu_usuario_docker'
+  imageName: 'unyleya_projeto_cicd_felipeferreira'
+
+steps:
+task: Docker@2
+  inputs:
+    containerRegistry: 'DockerHubConnection'
+    repository: '$(dockerHubId)/$(imageName)'
+    command: 'buildAndPush'
+    Dockerfile: '/Dockerfile'
+    tags: |
+      $(Build.BuildId)
+`
