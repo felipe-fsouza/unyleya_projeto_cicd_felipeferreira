@@ -11,7 +11,7 @@ pool:
 
 variables:
   dockerHubId: 'felipefsouza'
-  imageName: 'unyleya_projeto_cicd_felipeferreira'
+  imageName: 'unyleya-projeto-devops'
 
 steps:
 - task: Docker@2
