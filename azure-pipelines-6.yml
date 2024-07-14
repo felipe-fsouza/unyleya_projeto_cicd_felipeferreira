@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  dockerHubId: 'seu_usuario_docker'
+  dockerHubId: 'felipefsouza'
   imageName: 'unyleya_projeto_cicd_felipeferreira'
 
 steps:
