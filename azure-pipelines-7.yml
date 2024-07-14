@@ -14,7 +14,6 @@ variables:
   imageRepository: 'seu_usuario_docker/unyleya_projeto_cicd_felipeferreira'
   containerRegistry: 'felipefsouza'
   dockerfilePath: '/Dockerfile'
-  tag: '$(Build.BuildId)'
 
 stages:
 - stage: Build
