@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'AgentDevOps'
+  vmImage: 'ubuntu-latest'
 
 variables:
   dockerHubId: 'felipefsouza'
